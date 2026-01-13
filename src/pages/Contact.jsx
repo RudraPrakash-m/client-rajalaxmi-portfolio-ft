@@ -78,27 +78,28 @@ export default function Contact() {
             </div>
 
             <p className="text-gray-600 leading-relaxed">
-              I usually respond within 24 hours. Email is the preferred mode of
-              communication for professional inquiries.
+              I usually respond within 24 hours. Email is the preferred mode
+              of communication for professional inquiries.
             </p>
           </motion.div>
 
           {/* Right: Contact Form */}
           <motion.form
-            name="contact"
-            method="POST"
-            action="/success.html"
-            data-netlify="true"
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            onSubmit={handleSubmit}
             className="space-y-6"
           >
-            <input type="hidden" name="form-name" value="contact" />
-
             <div>
               <label className="block text-gray-700 mb-2">Name</label>
               <input
                 type="text"
                 name="name"
+                value={formData.name}
+                onChange={handleChange}
                 required
+                placeholder="Your name"
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:border-gray-900"
               />
             </div>
@@ -108,7 +109,10 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
+                placeholder="Your email"
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:border-gray-900"
               />
             </div>
@@ -116,20 +120,36 @@ export default function Contact() {
             <div>
               <label className="block text-gray-700 mb-2">Message</label>
               <textarea
-                name="message"
                 rows="5"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 required
+                placeholder="Your message"
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:border-gray-900"
               />
             </div>
 
             <button
               type="submit"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded hover:bg-gray-800 transition-colors font-medium"
+              disabled={status === "sending"}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded hover:bg-gray-800 transition-colors font-medium disabled:opacity-50"
             >
               <Send className="w-5 h-5" />
-              Send Message
+              {status === "sending" ? "Sending..." : "Send Message"}
             </button>
+
+            {status === "success" && (
+              <p className="text-green-600 text-sm">
+                Message sent successfully.
+              </p>
+            )}
+
+            {status === "error" && (
+              <p className="text-red-600 text-sm">
+                Failed to send message. Please try again later.
+              </p>
+            )}
           </motion.form>
         </div>
       </section>
