@@ -30,10 +30,6 @@ const App = () => {
         {
           path:"/contact",
           element:<Contact/>
-        },
-        {
-          path:"/success",
-          element:<Success/>
         }
       ]
     }
