@@ -35,7 +35,7 @@ export default function Projects() {
       repoUrl: null,
     },
     {
-      title: "Cusioclass – Student Problem-Solving Platform",
+      title: "Curioclass – Student Problem-Solving Platform",
       description:
         "A platform where students can upload images of problems for discussion and support. Built using React for frontend, Flask/FastAPI for backend, with WhatsApp and Node-RED integrations.",
       tech: ["React", "Flask", "FastAPI", "Node-RED", "WhatsApp API"],
