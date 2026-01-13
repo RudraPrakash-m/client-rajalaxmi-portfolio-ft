@@ -6,6 +6,7 @@ import IntroductionPage from "./pages/IntroductionPage";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Success from "./pages/Success";
 
 const App = () => {
 
@@ -29,6 +30,10 @@ const App = () => {
         {
           path:"/contact",
           element:<Contact/>
+        },
+        {
+          path:"/success",
+          element:<Success/>
         }
       ]
     }

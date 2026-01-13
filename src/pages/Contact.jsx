@@ -87,27 +87,49 @@ export default function Contact() {
           <motion.form
             name="contact"
             method="POST"
+            action="/success"
             data-netlify="true"
             className="space-y-6"
           >
             <input type="hidden" name="form-name" value="contact" />
 
             <div>
-              <label>Name</label>
-              <input type="text" name="name" required />
+              <label className="block text-gray-700 mb-2">Name</label>
+              <input
+                type="text"
+                name="name"
+                required
+                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:border-gray-900"
+              />
             </div>
 
             <div>
-              <label>Email</label>
-              <input type="email" name="email" required />
+              <label className="block text-gray-700 mb-2">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:border-gray-900"
+              />
             </div>
 
             <div>
-              <label>Message</label>
-              <textarea name="message" required />
+              <label className="block text-gray-700 mb-2">Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:border-gray-900"
+              />
             </div>
 
-            <button type="submit">Send</button>
+            <button
+              type="submit"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded hover:bg-gray-800 transition-colors font-medium"
+            >
+              <Send className="w-5 h-5" />
+              Send Message
+            </button>
           </motion.form>
         </div>
       </section>
