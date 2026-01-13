@@ -87,7 +87,7 @@ export default function Contact() {
           <motion.form
             name="contact"
             method="POST"
-            action="/success"
+            action="/success.html"
             data-netlify="true"
             className="space-y-6"
           >
