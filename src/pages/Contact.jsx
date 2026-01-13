@@ -90,6 +90,7 @@ export default function Contact() {
             variants={fadeIn}
             onSubmit={handleSubmit}
             className="space-y-6"
+            netlify
           >
             <div>
               <label className="block text-gray-700 mb-2">Name</label>
