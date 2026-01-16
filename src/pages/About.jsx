@@ -44,7 +44,7 @@ export default function AboutPage() {
     {
       degree: "Diploma",
       field: "Mechanical Engineering",
-      institution: "Utkalmani Gopabandhu Institute of Engineering (UGI)",
+      institution: "Utkalmani Gopabandhu Institute of Engineering (UGIE)",
     },
   ];
 
