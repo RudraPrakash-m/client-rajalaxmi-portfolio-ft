@@ -11,6 +11,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import cv from "../assets/cv/cv.pdf"
 
 export default function AboutPage() {
   const fadeIn = {
@@ -207,7 +208,7 @@ export default function AboutPage() {
             </Link>
 
             <a
-              href="/resume.pdf"
+              href={cv}
               download
               className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded font-medium"
             >

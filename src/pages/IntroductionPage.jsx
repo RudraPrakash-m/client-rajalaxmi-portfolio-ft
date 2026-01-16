@@ -10,6 +10,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import profileImg from "../assets/images/profile.jpeg";
+import cv from "../assets/cv/cv.pdf"
 
 export default function IntroductionPage() {
   const fadeIn = {
@@ -119,7 +120,7 @@ export default function IntroductionPage() {
                 </Link>
 
                 <a
-                  href="/resume.pdf"
+                  href={cv}
                   download
                   className="inline-flex items-center px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-md hover:bg-gray-50 transition-colors font-medium"
                 >
@@ -149,16 +150,21 @@ export default function IntroductionPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid md:grid-cols-3 gap-8"
+            className="grid md:grid-cols-3 gap-8 items-stretch"
           >
             {highlights.map((highlight, index) => (
               <motion.div
                 key={index}
                 variants={fadeIn}
-                className="bg-white p-8 rounded-lg border border-gray-200"
+                className="bg-white p-8 rounded-lg border border-gray-200 h-full"
               >
-                <div className="w-2 h-16 bg-gray-900 mb-6" />
-                <p className="text-gray-700 leading-relaxed">{highlight}</p>
+                <div className="flex gap-4">
+                  {/* Accent line */}
+                  <div className="w-[3px] h-10 bg-gray-900 mt-1 rounded-full" />
+
+                  {/* Content */}
+                  <p className="text-gray-700 leading-relaxed">{highlight}</p>
+                </div>
               </motion.div>
             ))}
           </motion.div>

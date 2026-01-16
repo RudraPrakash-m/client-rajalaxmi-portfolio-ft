@@ -78,8 +78,8 @@ export default function Contact() {
             </div>
 
             <p className="text-gray-600 leading-relaxed">
-              I usually respond within 24 hours. Email is the preferred mode
-              of communication for professional inquiries.
+              I usually respond within 24 hours. Email is the preferred mode of
+              communication for professional inquiries.
             </p>
           </motion.div>
 
