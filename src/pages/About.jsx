@@ -39,7 +39,7 @@ export default function AboutPage() {
       degree: "Bachelor of Engineering (B.E)",
       field: "Mechanical Engineering",
       institution:
-        "The Institution of Engineers India (IEI), Acharya Vihar, Bhubaneswar",
+        "The Institute of Engineers India (IEI), Acharya Vihar, Bhubaneswar",
     },
     {
       degree: "Diploma",
