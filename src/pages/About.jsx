@@ -33,7 +33,7 @@ export default function AboutPage() {
     {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science & Engineering",
-      institution: "NIIS",
+      institution: "NIET-NIIS INSTITUTE O F ENGINEERING and TECHNOLOGY",
     },
     {
       degree: "Bachelor of Engineering (B.E)",
