@@ -60,7 +60,7 @@ export default function AboutPage() {
       ],
     },
     {
-      title: "AutoCAD and MS Office Training",
+      title: "AutoCAD and MS-Office Training",
       institution: "Unitech Rourkela",
       details: [],
     },
