@@ -33,7 +33,7 @@ export default function AboutPage() {
     {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science & Engineering",
-      institution: "NIIS INSTITUTE O F ENGINEERING and TECHNOLOGY (NIET)",
+      institution: "NIIS Institution of Engineering and Technology (NIET),Bhubaneswar ",
     },
     {
       degree: "Bachelor of Engineering (B.E)",
@@ -44,7 +44,7 @@ export default function AboutPage() {
     {
       degree: "Diploma",
       field: "Mechanical Engineering",
-      institution: "Utkalmani Gopabandhu Institute of Engineering (UGIE)",
+      institution: "Utkalmani Gopabandhu Institute of Engineering (UGIE), Rourkela",
     },
   ];
 
