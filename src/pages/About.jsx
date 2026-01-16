@@ -33,18 +33,18 @@ export default function AboutPage() {
     {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science & Engineering",
-      institution: "NIET-NIIS INSTITUTE O F ENGINEERING and TECHNOLOGY",
+      institution: "NIIS INSTITUTE O F ENGINEERING and TECHNOLOGY (NIET)",
     },
     {
       degree: "Bachelor of Engineering (B.E)",
       field: "Mechanical Engineering",
       institution:
-        "The Institution of Engineers India, Acharya Vihar, Bhubaneswar",
+        "The Institution of Engineers India, Acharya Vihar, Bhubaneswar (IEI)",
     },
     {
       degree: "Diploma",
       field: "Mechanical Engineering",
-      institution: "Utkalmani Gopabandhu Institute of Engineering",
+      institution: "Utkalmani Gopabandhu Institute of Engineering (UGI)",
     },
   ];
 
