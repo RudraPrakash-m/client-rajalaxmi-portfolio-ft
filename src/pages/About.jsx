@@ -33,13 +33,13 @@ export default function AboutPage() {
     {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science & Engineering",
-      institution: "Nigam Institute of Engineering and Technology (NIET)",
+      institution: "NIIS",
     },
     {
       degree: "Bachelor of Engineering (B.E)",
       field: "Mechanical Engineering",
       institution:
-        "The Institution of Engineers (India), Acharya Vihar, Bhubaneswar",
+        "The Institution of Engineers India, Acharya Vihar, Bhubaneswar",
     },
     {
       degree: "Diploma",
@@ -60,7 +60,7 @@ export default function AboutPage() {
       ],
     },
     {
-      title: "AutoCAD Training",
+      title: "AutoCAD and MS Office Training",
       institution: "Unitech Rourkela",
       details: [],
     },
