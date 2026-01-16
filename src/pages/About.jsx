@@ -33,7 +33,7 @@ export default function AboutPage() {
     {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science & Engineering",
-      institution: "NIIS Institution of Engineering and Technology (NIET),Bhubaneswar ",
+      institution: "NIIS Institution of Engineering and Technology (NIET), Bhubaneswar ",
     },
     {
       degree: "Bachelor of Engineering (B.E)",
