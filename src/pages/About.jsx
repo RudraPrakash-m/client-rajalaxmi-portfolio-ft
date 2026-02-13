@@ -220,14 +220,14 @@ export default function AboutPage() {
           <div className="flex gap-4 justify-center mt-8">
             <a
               aria-label="GitHub"
-              href="https://github.com/"
+              href="https://github.com/Rajalaxmi-b"
               className="w-12 h-12 border-2 border-white rounded flex items-center justify-center text-white"
             >
               <Github className="w-5 h-5" />
             </a>
             <a
               aria-label="LinkedIn"
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/rajalaxmi-beura-8964573a5"
               className="w-12 h-12 border-2 border-white rounded flex items-center justify-center text-white"
             >
               <Linkedin className="w-5 h-5" />

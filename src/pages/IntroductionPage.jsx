@@ -271,7 +271,7 @@ export default function IntroductionPage() {
           <div className="flex gap-4">
             <a
               aria-label="GitHub Profile"
-              href="https://github.com/"
+              href="https://github.com/Rajalaxmi-b"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 border-2 border-gray-900 rounded flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors"
@@ -281,7 +281,7 @@ export default function IntroductionPage() {
 
             <a
               aria-label="LinkedIn Profile"
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/rajalaxmi-beura-8964573a5"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 border-2 border-gray-900 rounded flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors"
@@ -291,7 +291,7 @@ export default function IntroductionPage() {
 
             <a
               aria-label="Email"
-              href="mailto:example@email.com"
+              href="mailto:beurar005@gmail.com"
               className="w-12 h-12 border-2 border-gray-900 rounded flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors"
             >
               <Mail className="w-5 h-5" />
