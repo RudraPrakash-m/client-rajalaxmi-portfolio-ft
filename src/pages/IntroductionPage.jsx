@@ -55,11 +55,6 @@ export default function IntroductionPage() {
       description:
         "Implemented a deep learning–based solution to detect eye-related diseases from image data, focusing on model accuracy, dataset handling, and performance evaluation.",
     },
-    {
-      title: "Curioclass – Student Problem-Solving Platform",
-      description:
-        "Developed a platform enabling students to upload images of problems for assistance and discussion. Implemented frontend using React, backend services using Flask/FastAPI, and integrations with WhatsApp and Node-RED to support communication workflows.",
-    },
   ];
 
   const highlights = [
