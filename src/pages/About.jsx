@@ -11,7 +11,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import cv from "../assets/cv/cv.pdf"
+import cv from "../assets/cv/cv.pdf";
 
 export default function AboutPage() {
   const fadeIn = {
@@ -31,9 +31,15 @@ export default function AboutPage() {
 
   const education = [
     {
+      degree: "Integrated PhD",
+      field: "Computer Science & Engineering",
+      institution: "KIIT University, Bhubaneswar",
+    },
+    {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science & Engineering",
-      institution: "NIIS Institute of Engineering and Technology (NIET), Bhubaneswar ",
+      institution:
+        "NIIS Institute of Engineering and Technology (NIET), Bhubaneswar ",
     },
     {
       degree: "Bachelor of Engineering (B.E)",
@@ -44,7 +50,8 @@ export default function AboutPage() {
     {
       degree: "Diploma",
       field: "Mechanical Engineering",
-      institution: "Utkalamani Gopabandhu Institute of Engineering (UGIE), Rourkela",
+      institution:
+        "Utkalamani Gopabandhu Institute of Engineering (UGIE), Rourkela",
     },
   ];
 
@@ -134,13 +141,8 @@ export default function AboutPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {Object.entries(skills).map(([category, items], index) => (
-              <div
-                key={index}
-                className="border-l-4 border-gray-900 pl-6 py-4"
-              >
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  {category}
-                </h3>
+              <div key={index} className="border-l-4 border-gray-900 pl-6 py-4">
+                <h3 className="font-semibold text-gray-900 mb-2">{category}</h3>
                 <p className="text-gray-600">{items}</p>
               </div>
             ))}
@@ -154,10 +156,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-12">Education</h2>
           <div className="space-y-6">
             {education.map((edu, index) => (
-              <div
-                key={index}
-                className="bg-white border rounded-lg p-6"
-              >
+              <div key={index} className="bg-white border rounded-lg p-6">
                 <h3 className="font-semibold text-gray-900">{edu.degree}</h3>
                 <p className="text-gray-700">{edu.field}</p>
                 <p className="text-gray-600 text-sm">{edu.institution}</p>
